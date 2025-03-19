@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&family=Zen+Kurenaido&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-main: "Zen Kurenaido", sans-serif;
+  --font-alt: "Merriweather", serif;
+  --color-dark: #2C1C0D;
+  --color-med: #724F2F;
+  --color-light: #D0A67D;
+}
+
+@layer base {
+  html {
+    @apply flex justify-center font-main text-black;
+  }
+}
