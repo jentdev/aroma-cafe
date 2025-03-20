@@ -4,6 +4,7 @@
 @theme {
   --font-main: "Zen Kurenaido", sans-serif;
   --font-alt: "Merriweather", serif;
+
   --color-dark: #2C1C0D;
   --color-med: #724F2F;
   --color-light: #D0A67D;
@@ -12,5 +13,87 @@
 @layer base {
   html {
     @apply flex justify-center font-main text-black;
+  }
+}
+
+@layer components {
+  /* navbar */
+  nav {
+    @apply w-full bg-med flex justify-between p-4;
+  }
+  .social-links {
+    @apply flex gap-3
+  }
+  .nav-links {
+    @apply flex gap-3
+  }
+  nav img {
+    @apply w-5
+  }
+
+  /* header */
+  header {
+    @apply flex items-center justify-center p-40 bg-cover bg-center;
+  }
+  .logo-outer-border {
+    @apply bg-dark p-2 rounded-full
+  }
+  .logo-container {
+    @apply flex flex-col items-center justify-center w-fit h-fit px-5 pt-2 pb-3 rounded-full border-2 border-white text-white bg-dark uppercase
+  }
+  header img {
+    @apply w-10
+  }
+
+  /* hero */
+  main {
+    @apply p-20 flex flex-col gap-3;
+  }
+
+  /* menu */
+  .menu-container {
+    @apply w-full flex justify-center
+  }
+  .menu-items {
+    @apply max-w-3/4 grid grid-cols-3 px-5 gap-5;
+  }
+  .menu-item:first-child {
+    @apply bg-dark;
+  }
+  .menu-item:nth-child(2) {
+    @apply bg-light;
+  }
+  .menu-item:last-child {
+    @apply bg-med;
+  }
+  .menu-item div {
+    @apply flex justify-center;
+  }
+  .menu-photo-1 {
+    @apply bg-[linear-gradient(to_bottom,white_50%,#2C1C0D_50%)]
+  }
+  .menu-photo-2 {
+    @apply bg-[linear-gradient(to_bottom,white_50%,#D0A67D_50%)]
+  }
+  .menu-photo-3 {
+    @apply bg-[linear-gradient(to_bottom,white_50%,#724F2F_50%)]
+  }
+  .menu-item img {
+    @apply w-[50%] rounded-full
+  }
+
+  /* location */
+  .location-container {
+    @apply bg-light mt-20 py-25 px-10 items-center justify-center flex gap-10;
+  }
+  
+  /* map container - leaflet */
+  .leaflet-container {
+    @apply w-[300px] h-[200px]
+  }
+
+  /* footer */
+  footer {
+    @apply flex justify-center p-3;
   }
 }
