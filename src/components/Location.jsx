@@ -8,7 +8,7 @@ import { assets } from '../assets/assets';
 const Location = () => {
 
   const marker = {
-    geacode: [40.7579747,-73.9881175],
+    geacode: [40.7825547,-73.968153],
     popUp: 'Aroma Cafe'
   };
 
@@ -20,7 +20,7 @@ const Location = () => {
   return (
     <div className="location-container">
       <div className="map-container">
-        <MapContainer center={[40.7579747,-73.9881175]} zoom={13}>
+        <MapContainer center={[40.7825547,-73.968153]} zoom={13}>
           <TileLayer
             url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'
           />
