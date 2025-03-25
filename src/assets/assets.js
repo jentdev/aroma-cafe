@@ -23,3 +23,22 @@ export const assets = {
     coffee,
     tea,
 };
+
+export const navItems = [
+    {
+        label: 'home',
+        endpoint: '#home',
+    },
+    {
+        label: 'about',
+        endpoint: '#about',
+    },
+    {
+        label: 'menu',
+        endpoint: '#menu',
+    },
+    {
+        label: 'location',
+        endpoint: '#location',
+    },
+];

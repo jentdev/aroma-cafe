@@ -18,8 +18,15 @@ const Location = () => {
   });
 
   return (
-    <div className="location-container">
-      <div className="map-container">
+    <div className="location">
+      <div className="contact">
+        <p className="address">
+          <span>405 Platte Ave</span>
+          <span>Manhattan, NY 10019</span>
+        </p>
+        <p className="phone">(987) - 654 - 3210</p>
+      </div>
+      <div className="map">
         <MapContainer center={[40.7825547,-73.968153]} zoom={13}>
           <TileLayer
             url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'
@@ -30,11 +37,7 @@ const Location = () => {
           </Marker>         
         </MapContainer>
       </div>
-      <div>
-        <p>405 Platte Ave</p>
-        <p>Manhattan, NY 10019</p>
-        <p>(987) - 654 - 3210</p>
-      </div>
+      
     </div>
   )
 };

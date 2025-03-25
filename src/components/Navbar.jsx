@@ -1,7 +1,22 @@
-import React from 'react';
-import { assets } from '../assets/assets';
+import React, { useEffect, useState } from 'react';
+import { assets, navItems } from '../assets/assets';
+import { NavLink } from 'react-router';
+import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
+  const [ scrolledPast, setScrolledPast] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+        if (scrollY > 50) {
+            setScrolledPast(true);
+        }
+        else {
+            setScrolledPast(false);
+        }
+    });
+}, []);
+
   return (
     <nav>
       <div className="social-links">
@@ -9,12 +24,16 @@ const Navbar = () => {
         <img src={assets.facebook} alt="Facebook" />
         <img src={assets.tiktok} alt="TikTok" />
       </div>
-      <div className="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#location">Location</a>
-      </div>
+
+      <ul>
+        {navItems.map(({label, endpoint}) => (
+            <li key={label}>
+                <a href={endpoint}>{label}</a>
+            </li>
+        ))}
+        </ul>
+
+      <MobileMenu />
     </nav>
   )
 };
