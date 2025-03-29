@@ -1,110 +1,110 @@
 export const espresso = [
     {
-        drink: espresso,
+        item: 'espresso',
         price: [{hot: 6}]
     },
     {
-        drink: americano,
+        item: 'americano',
         price: [{hot: 7.50, iced: 7.25}]
     },
     {
-        drink: cappuccino,
+        item: 'cappuccino',
         price: [{hot: 7.75, iced: 7.50}]
     },
     {
-        drink: 'mocha latte',
+        item: 'mocha latte',
         price: [{hot: 8, iced: 7.75}]
     },
     {
-        drink: latte,
+        item: 'latte',
         price: [{hot: 6.25, iced: 6}]
     },
 ];
 
 export const coldBrew = [
     {
-        drink: 'cold brew',
+        item: 'cold brew',
         price: [{'16oz': 6.75, '20oz': 7.50}]
     },
     {
-        drink: 'aroma cold brew',
+        item: 'aroma cold brew',
         price: [{'16oz': 8, '20oz': 8.75}]
     },
     {
-        drink: 'New York cold brew',
+        item: 'New York cold brew',
         price: [{'16oz': 7.75, '20oz': 7}]
     },
 ];
 
 export const latte = [
     {
-        drink: 'crème brûlée latte',
+        item: 'crème brûlée latte',
         price: [{'12oz': 8.50}]
     },
     {
-        drink: 'tiramisu latte',
+        item: 'tiramisu latte',
         price: [{'16oz': 9}]
     },
     {
-        drink: 'einspänner latte',
+        item: 'einspänner latte',
         price: [{'8oz': 7.25}]
     },
 ];
 
-export const tea = [
+export const teas = [
     {
-        drink: 'chai tea',
+        item: 'chai tea',
         price: [{hot: 7.50, iced: 7.25}]
     },
     {
-        drink: 'chamomile tea',
+        item: 'chamomile tea',
         price: [{hot: 6.25}]
     },
     {
-        drink: 'earl grey tea',
+        item: 'earl grey tea',
         price: [{hot: 6.25}]
     },
     {
-        drink: 'peach peony tea',
+        item: 'peach peony tea',
         price: [{iced: 6.25}]
     },
     {
-        drink: 'einspänner matcha',
+        item: 'einspänner matcha',
         price: [{iced: 7.50}]
     },
     {
-        drink: 'ceremonial matcha',
+        item: 'ceremonial matcha',
         price: [{hot: 7.25, iced: 7}]
     },
 ];
 
 export const pastries = [
     {
-        pastry: 'apply rose pie',
-        price: 6
+        item: 'apply rose pie',
+        price: [{'': 6}]
     },
     {
-        pastry: 'raisin cinnamon roll',
-        price: 6.25
+        item: 'raisin cinnamon roll',
+        price: [{'': 6.25}]
     },
     {
-        pastry: 'almond croissant',
-        price: 7
+        item: 'almond croissant',
+        price: [{'': 7}]
     },
     {
-        pastry: 'chocolate eclair',
-        price: 6
+        item: 'chocolate eclair',
+        price: [{'': 6}]
     },
     {
-        pastry: 'fruit tart',
-        price: 7.25
+        item: 'fruit tart',
+        price: [{'': 7.25}]
     },
     {
-        pastry: 'apply rose pie',
-        price: 6
+        item: 'apply rose pie',
+        price: [{'': 6}]
     },
     {
-        pastry: 'cheese danish',
-        price: 5.75
+        item: 'cheese danish',
+        price: [{'': 5.75}]
     },
 ];

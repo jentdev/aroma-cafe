@@ -27,18 +27,18 @@ export const assets = {
 export const navItems = [
     {
         label: 'home',
-        endpoint: '#home',
+        endpoint: '/#top',
     },
     {
         label: 'about',
-        endpoint: '#about',
+        endpoint: '/#about',
     },
     {
         label: 'menu',
-        endpoint: '#menu',
+        endpoint: '/#menu',
     },
     {
         label: 'location',
-        endpoint: '#location',
+        endpoint: '/#location',
     },
 ];

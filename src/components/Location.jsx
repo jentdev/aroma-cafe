@@ -18,7 +18,7 @@ const Location = () => {
   });
 
   return (
-    <div className="location">
+    <div className="location" id="location">
       <div className="contact">
         <p className="address">
           <span>405 Platte Ave</span>

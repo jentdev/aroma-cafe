@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { assets } from '../assets/assets';
+import { useNavigate } from 'react-router';
 
 const Menu = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="menu" id="menu">
       <div className="menu-items">
@@ -12,6 +16,7 @@ const Menu = () => {
           <div className="content">
           <h3>espresso</h3>
           <p>Strong, concentrated shots of coffee with rich, smooth flavors.</p>
+          <p onClick={() => navigate('/menu/coffee')}>view menu</p>          
           </div>
         </div>
         <div className="menu-item">

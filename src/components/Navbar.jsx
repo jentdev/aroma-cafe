@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { assets, navItems } from '../assets/assets';
-import { NavLink } from 'react-router';
 import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
   const [ scrolledPast, setScrolledPast] = useState(false);
+
+
+  useEffect(() => {});
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
