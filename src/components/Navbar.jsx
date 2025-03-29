@@ -1,5 +1,5 @@
 import React from 'react';
-import { assets, navItems } from '../assets/assets';
+import { navItems,  socialLinks } from '../assets/assets';
 import MobileMenu from './MobileMenu';
 
 
@@ -25,9 +25,12 @@ const Navbar = () => {
     <nav>
 
       <div className="social-links">
-        <img src={assets.instagram} alt="Instagram" />
+        {/* <img src={assets.instagram} alt="Instagram" />
         <img src={assets.facebook} alt="Facebook" />
-        <img src={assets.tiktok} alt="TikTok" />
+        <img src={assets.tiktok} alt="TikTok" /> */}
+        {socialLinks.map(({label, img, url}) => (
+          <a href={url} key={label} target="_blank"><img src={img} alt={label} /></a>
+        ))}
       </div>
 
       <ul>

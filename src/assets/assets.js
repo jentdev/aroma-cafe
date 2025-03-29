@@ -13,10 +13,7 @@ import tea from './tea.jpg';
 
 // export icons
 export const assets = {
-    logo,
-    facebook,
-    instagram,
-    tiktok,
+    logo,    
     pin,
     bg,
     pastry,
@@ -24,6 +21,7 @@ export const assets = {
     tea,
 };
 
+// nav links
 export const navItems = [
     {
         label: 'home',
@@ -41,4 +39,23 @@ export const navItems = [
         label: 'location',
         endpoint: '/#location',
     },
+];
+
+// social links
+export const socialLinks = [
+    {
+        label: 'Facebook',
+        img: facebook,
+        url: 'https://www.facebook.com/'
+    },
+    {
+        label: 'Instagram',
+        img: instagram,
+        url: 'https://www.instagram.com/'
+    },
+    {
+        label: 'TikTok',
+        img: tiktok,
+        url: 'https://www.tiktok.com/'
+    }
 ];

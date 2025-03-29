@@ -34,7 +34,10 @@
     @apply fixed flex bg-medium w-full justify-between p-sm top-0 left-0 z-2;
   }
   .social-links {
-    @apply flex gap-3
+    @apply flex gap-3 items-center;
+  }
+  .social-links img {
+    @apply h-7
   }
   nav ul {
     @apply hidden sm:flex gap-6;
