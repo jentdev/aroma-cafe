@@ -10,6 +10,7 @@ const AppContextProvider = (props) => {
         menuOpen, setMenuOpen,
     };
 
+
     return (
         <AppContext.Provider value={value}>
             {props.children}

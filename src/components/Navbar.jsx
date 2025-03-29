@@ -1,6 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React from 'react';
 import { assets, navItems } from '../assets/assets';
 import MobileMenu from './MobileMenu';
+
 
 
 const Navbar = () => {
@@ -33,7 +34,6 @@ const Navbar = () => {
         {navItems.map(({label, endpoint}) => (
             <li key={label}>
                 <a href={endpoint}>{label}</a>
-
             </li>
         ))}
         </ul>

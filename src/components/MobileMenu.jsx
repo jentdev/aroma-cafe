@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { navItems } from '../assets/assets';
-import { NavLink } from 'react-router';
 import { AppContext } from '../context/AppContext';
 import { MobileBtn } from './MobileBtn';
 
@@ -23,7 +22,7 @@ const MobileMenu = () => {
                     <ul>
                         {navItems.map(({label, endpoint}) => (
                             <li key={label}>
-                                <NavLink to={endpoint}>{label}</NavLink>
+                                <a href={endpoint}>{label}</a>
                             </li>
                         ))}
                     </ul>

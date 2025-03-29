@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import { Route, Routes } from 'react-router';
 import Home from './pages/Home';
 import ViewMenu from './pages/ViewMenu';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
@@ -15,8 +16,10 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/menu/:category' element={<ViewMenu />} />
+
       </Routes>
       <Footer />
+      <ScrollToTop />
     </div>
   )
 };

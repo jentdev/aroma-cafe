@@ -16,10 +16,10 @@
 
 @layer base {
   *, *::before, *::after {
-    @apply box-border;
+    @apply box-border scroll-smooth;
   }
   html {
-    @apply flex justify-center font-main text-black ;
+    @apply flex justify-center font-main text-black scroll-p-30;
   }
 
   body {
