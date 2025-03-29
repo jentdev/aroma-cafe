@@ -25,7 +25,9 @@ const ViewMenu = () => {
         <DisplayMenu subcat='teas' items={teas} />
       </div>}
 
-      {category === "pastries" && <div>display pastries</div>}
+      {category === "pastries" && <div>
+        <DisplayMenu subcat='pastries' items={pastries} />
+      </div>}
     </div>
   );
 };

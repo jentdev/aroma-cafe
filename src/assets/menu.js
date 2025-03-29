@@ -209,7 +209,7 @@ export const teas = [
 
 export const pastries = [
     {
-        name: 'apply rose pie',
+        name: 'apple rose pie',
         price: [
             {
                 type: '1 serving',
@@ -250,15 +250,6 @@ export const pastries = [
             {
                 type: '1 serving',
                 price: 7.25
-            }
-        ]
-    },
-    {
-        name: 'apply rose pie',
-        price: [
-            {
-                type: '1 serving',
-                price: 6
             }
         ]
     },

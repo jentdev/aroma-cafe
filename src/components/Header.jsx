@@ -5,7 +5,7 @@ const Header = () => {
   return (
     // <header style={{backgroundImage: `url(${assets.bg})`}}>
 
-    <header>      
+    <header id="">      
         <div className="logo">
           <img src={assets.logo} alt="Logo" />
         </div>      

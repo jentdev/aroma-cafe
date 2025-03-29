@@ -2,25 +2,27 @@ import React, { useContext, useEffect, useState } from 'react';
 import { assets, navItems } from '../assets/assets';
 import MobileMenu from './MobileMenu';
 
+
 const Navbar = () => {
-  const [ scrolledPast, setScrolledPast] = useState(false);
+//   const [ scrolledPast, setScrolledPast] = useState(false);
 
 
-  useEffect(() => {});
+//   useEffect(() => {});
 
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-        if (scrollY > 50) {
-            setScrolledPast(true);
-        }
-        else {
-            setScrolledPast(false);
-        }
-    });
-}, []);
+//   useEffect(() => {
+//     window.addEventListener('scroll', () => {
+//         if (scrollY > 50) {
+//             setScrolledPast(true);
+//         }
+//         else {
+//             setScrolledPast(false);
+//         }
+//     });
+// }, []);
 
   return (
     <nav>
+
       <div className="social-links">
         <img src={assets.instagram} alt="Instagram" />
         <img src={assets.facebook} alt="Facebook" />
@@ -31,6 +33,7 @@ const Navbar = () => {
         {navItems.map(({label, endpoint}) => (
             <li key={label}>
                 <a href={endpoint}>{label}</a>
+
             </li>
         ))}
         </ul>
