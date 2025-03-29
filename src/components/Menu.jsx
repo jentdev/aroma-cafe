@@ -16,7 +16,7 @@ const Menu = () => {
           <div className="content">
           <h3>espresso</h3>
           <p>Strong, concentrated shots of coffee with rich, smooth flavors.</p>
-          <p onClick={() => navigate('/menu/coffee')}>view menu</p>          
+          <div className="view-menu-btn" onClick={() => navigate('/menu/coffee')}>view&nbsp;menu</div>          
           </div>
         </div>
         <div className="menu-item">
@@ -26,7 +26,7 @@ const Menu = () => {
           <div className="content">
             <h3>teas</h3>
             <p>A selection of aromatic brewed teas, offering soothing flavors.</p>
-            <p onClick={() => navigate('/menu/teas')}>view menu</p> 
+            <div className="view-menu-btn" onClick={() => navigate('/menu/teas')}>view&nbsp;menu</div> 
           </div>
         </div>
         <div className="menu-item">
@@ -36,7 +36,7 @@ const Menu = () => {
           <div className="content">
           <h3>pastries</h3>
           <p>A delicious variety of freshly-baked sweet and savory pastries.</p>
-          <p onClick={() => navigate('/menu/pastries')}>view menu</p> 
+          <div className="view-menu-btn" onClick={() => navigate('/menu/pastries')}>view&nbsp;menu</div> 
           </div>
         </div>
       </div>

@@ -48,7 +48,7 @@ export const espresso = [
         ]
     },
     {
-        name: 'latte',
+        name: 'spanish latte',
         price: [
             {
                 type: 'hot',
@@ -57,6 +57,36 @@ export const espresso = [
             {
                 type: 'iced',
                 price: 6
+            }
+        ]
+    },
+];
+
+export const signature = [
+    {
+        name: 'crème brûlée latte',
+        price: [
+            {
+                type: '12oz',
+                price: 8.50
+            }
+        ]
+    },
+    {
+        name: 'tiramisu latte',
+        price: [
+            {
+                type: '16oz',
+                price: 9
+            }
+        ]
+    },
+    {
+        name: 'einspänner latte',
+        price: [
+            {
+                type: '8oz',
+                price: 7.25
             }
         ]
     },
@@ -104,36 +134,6 @@ export const coldBrew = [
     },
 ];
 
-export const latte = [
-    {
-        name: 'crème brûlée latte',
-        price: [
-            {
-                type: '12oz',
-                price: 8.50
-            }
-        ]
-    },
-    {
-        name: 'tiramisu latte',
-        price: [
-            {
-                type: '16oz',
-                price: 9
-            }
-        ]
-    },
-    {
-        name: 'einspänner latte',
-        price: [
-            {
-                type: '8oz',
-                price: 7.25
-            }
-        ]
-    },
-];
-
 export const teas = [
     {
         name: 'chai tea',
@@ -170,10 +170,6 @@ export const teas = [
         name: 'peach peony tea',
         price: [
             {
-                type: '',
-                price: '',
-            },
-            {
                 type: 'iced',
                 price: 6.25
             }
@@ -182,10 +178,6 @@ export const teas = [
     {
         name: 'einspänner matcha',
         price: [
-            {
-                type: '',
-                price: '',
-            },
             {
                 type: 'iced',
                 price: 7.50

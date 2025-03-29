@@ -7,11 +7,11 @@ const DisplayMenu = ({subcat, items}) => {
         <h1>{subcat}</h1>
         {items.map(({name, price}) => (
             <div key={name} className="food-item-container">
-                <p>{name}</p>
+                <h2>{name}</h2>
                 {price.map(({type, price}, index) => (
                     <div key={index} className="food-item">
-                        <p>{type}</p>
-                        <p>{price}</p>
+                        <div className="type">{type}</div>
+                        <div>{`$${price.toFixed(2)}`}</div>
                     </div>
                 ))}
             </div>
