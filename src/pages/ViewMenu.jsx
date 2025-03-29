@@ -1,20 +1,29 @@
 import React from "react";
-import { espresso, coldBrew, latte, teas, pastries } from "../assets/menu";
 import { useParams } from "react-router";
+
+import { espresso, coldBrew, latte, teas, pastries } from "../assets/menu";
+import DisplayMenu from "../components/DisplayMenu";
 
 const ViewMenu = () => {
   const { category } = useParams();
-  console.log(category);
 
   return (
     <div>
-      {category === "coffee" && <div>display espresso</div>}
+      {category === "coffee" && <div>
+        <DisplayMenu subcat='espresso' items={espresso} />
+      </div>}
 
-      {category === "coffee" && <div>display cold brew</div>}
+      {category === "coffee" && <div>
+        <DisplayMenu subcat='cold brew' items={coldBrew} />
+      </div>}
 
-      {category === "coffee" && <div>display latte</div>}
+      {category === "coffee" && <div>
+        <DisplayMenu subcat='latte' items={latte} />
+      </div>}
 
-      {category === "teas" && <div>display teas</div>}
+      {category === "teas" && <div>
+        <DisplayMenu subcat='teas' items={teas} />
+      </div>}
 
       {category === "pastries" && <div>display pastries</div>}
     </div>

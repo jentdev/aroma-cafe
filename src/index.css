@@ -118,6 +118,20 @@
     @apply w-full md:rounded-full;
   }
 
+  /* < DisplayMenu > */
+  .display-menu {
+    @apply flex flex-col;
+  }
+  .display-menu .food-item-container {
+    @apply flex;
+  }
+  /* .food-menu-item {
+    @apply grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4;
+  } */
+  .food-item {
+    @apply flex;
+  }
+
   /* location */
   .location {
     @apply bg-light mt-20 py-15 sm:py-25 px-10 items-center justify-center flex sm:flex-row-reverse gap-10;
