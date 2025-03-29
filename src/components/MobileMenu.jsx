@@ -5,7 +5,7 @@ import { AppContext } from '../context/AppContext';
 import { MobileBtn } from './MobileBtn';
 
 const MobileMenu = () => {
-    const { menuOpen } = useContext(AppContext);
+    const { menuOpen, setMenuOpen } = useContext(AppContext);
     
   return (
     <div className="mobile-menu">
@@ -22,7 +22,7 @@ const MobileMenu = () => {
                     <ul>
                         {navItems.map(({label, endpoint}) => (
                             <li key={label}>
-                                <a href={endpoint}>{label}</a>
+                                <a href={endpoint} onClick={() => setMenuOpen(false)}>{label}</a>
                             </li>
                         ))}
                     </ul>

@@ -47,10 +47,10 @@
     @apply relative block sm:hidden
   }
   .mobile-menu .items {
-    @apply absolute top-0 right-0  bg-gray-700 min-h-64 rounded-md p-8 flex flex-col z-10 origin-top-right;
+    @apply absolute -top-2 -right-2 bg-dark min-h-64 w-[150px] rounded-md p-9 flex flex-col z-10 origin-top-right;
   }
   .mobile-menu .items ul {
-    @apply flex flex-col gap-2 flex-1;
+    @apply flex flex-col gap-2 flex-1 pt-4;
   }
   /* hamburger button */
   .hamburger-btn {
